@@ -1,0 +1,3 @@
+{% load crispy_forms_tags %}
+{{ form.username|as_crispy_field }}
+        {{ form.password|as_crispy_field }}

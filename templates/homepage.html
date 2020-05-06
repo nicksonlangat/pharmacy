@@ -131,7 +131,9 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="product-item">
               <figure>
+                  {% if product.image %}
                 <img src="{{ product.image.url }}" alt="Image" class="img-fluid">
+                    {% endif %}
               </figure>
               <div class="px-4">
                 <h3><a href="{{ product.get_absolute_url }}">{{ product.name }}</a></h3>
